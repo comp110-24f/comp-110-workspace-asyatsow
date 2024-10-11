@@ -1,0 +1,11 @@
+# pets: list[str] = ["Louie", "Bo", "Bear"]
+# for elem in pets:
+#    print(f"Good boy, {elem}!")
+
+
+names: list[str] = ["Alyssa", "Janet", "Vrinda"]
+# idx: int = 0 - not needed only for while loops
+# for elem in names:
+#     print(elem)
+for idx in range(0, len(names)):
+    print(str(idx) + ":" + names[idx])

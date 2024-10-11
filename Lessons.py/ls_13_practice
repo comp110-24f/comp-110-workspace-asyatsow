@@ -1,0 +1,37 @@
+my_numbers: list[float] = []  # literal
+ny_numbers: list[float] = list()  # constructor
+# adding an item to the list means using the append function. The name is my_numbers, additing it was 1.5. Append only takes floats.
+my_numbers.append(1.5)
+my_numbers.append(2.3)
+
+game_points: list[int] = [102, 86, 94]
+print(game_points[4])
+
+
+# Subscription Notation/Indexing
+print(
+    game_points[2]
+)  # it printed out 94, because game_points is at subscription 2 on line 8
+
+
+# Modifying by Index (bc lists are mutable)
+
+# grocery_list: list[str] = ["bannanas", "milk", "bread"]   # This will NOT work because strings are not mutable
+# print grocery_list [1] = "eggs"
+
+game_points[1] = 72
+print(
+    games_points
+)  # This will work because ints are mutable and you can actually change the value
+print(len(game_points))
+# We have now changed milk to eggs in the list so it will
+
+
+def display(list_value: list[int]) -> None:
+    index: int = 0
+    while index < len(list_value):
+        print(list_value[index])
+        index += 1
+
+
+display(list_value=game_points)

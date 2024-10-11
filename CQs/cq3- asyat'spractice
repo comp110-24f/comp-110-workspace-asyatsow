@@ -1,0 +1,56 @@
+"""For this assignment, you’re going to write a function called num_instances.
+ Given two strings, phrase and search_char (a single character), num_instances 
+ should return the count of occurrences of search_char in phrase"""
+
+"""What is this assignment saying? 
+It is saying that they want you to go through everyword of the value that is stored under phrase. 
+And if there is a matching letter, using search_char, they want you to print out the number of matching letters. 
+This is case sensitive. 
+    
+ Thus, what variables will I need. I will need a "count' variable to count what I am doing that also increases 
+as I find a letter. 
+I will need an index variable that starts off at 0, in order for phrase to be ran through. 
+    The phrase can be any number of letters, so I need a variable to run through it until all the letters are run through. 
+    
+    How will we do this? 
+    - the length of phrase has to be greater than the index because the index starts at 0. 
+     -We also have to use a while loop. 
+      ---> What does a while loop do? 
+       - a while loop continuously repeats through a block of code until it is proven to be False. 
+       """
+# def num_instances (phrase:str, search_char:str) -> int: 
+#  index: int = 0  # intializes the variable index and starts it off at 0
+ #   count: int = 0
+#    while index < len(phrase):  # length has to be in front of phrase because it has to be turned into a number 
+# That will ensure that there isn't any error, becasuse the index will always be smaller 
+ #       if phrase[index] == search_char:  # We put index as the index bc it starts off at 0, and wi
+            # The part that I am confused with is, the first letter of the phrase isn't equal to the character chosen 
+            # then it will completely skip the line. So I think I have this backwords I belie
+ #       index +=1
+ #       count +=1
+        
+# return count
+   
+#def num_instances (phrase: str, search_char: str) -> int: 
+#index: int = 0 
+#count: int = 0 
+
+#while index < len(phrase): # This is a continuous loop that needs to continuously keep running until there is no more letters
+    #if phrase[index] == search_char: 
+       #count+=1  # This HAS to be indented because the statement MUST BE TRUE in order for count to increase
+    #index +=1 # This CANNOT BE INDENTED because if the 'if' statement is false, we still want it to increase the index count 
+
+#return count
+ 
+ def chars (msg:str) -> str: 
+    idx: int = 0
+    copy: str = msg
+    while idx < len(msg):
+        print(msg[idx])
+        idx += 1 
+    return copy
+
+
+
+    
+    
